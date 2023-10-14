@@ -1,7 +1,7 @@
 package com.example.multicalculator
 
 
-class calculator {
+class Calculator {
     fun add(left: Int, right: Int): Int {
         return left + right
     }
@@ -16,7 +16,7 @@ class calculator {
 
     fun div(left: Int, right: Int): Double
     {
-        return left.toDouble() % right.toDouble()
+        return left.toDouble() / right.toDouble()
     }
 }
 
