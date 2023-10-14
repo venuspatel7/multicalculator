@@ -44,7 +44,15 @@ fun CalcView() {
                 CalcDisplay(display)
         }
         Row {
+            Column {
 
+            }
+            Column {
+                CalcOperationButton("+", display)
+                CalcOperationButton("-", display)
+                CalcOperationButton("*", display)
+                CalcOperationButton("/", display)
+            }
         }
     }
 }
