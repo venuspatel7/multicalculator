@@ -50,7 +50,9 @@ fun CalcView()
         }
         Row(modifier = Modifier.fillMaxWidth()) {
           Column {
-
+              for (i in 7 downTo 1 step 3) {
+                  CalcRow(i, arrayOf(Button(), Button(), Button()), "display text")
+              }
           }
            Column {
 
