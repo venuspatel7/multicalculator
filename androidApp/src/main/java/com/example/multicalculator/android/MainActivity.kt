@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -35,6 +36,56 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun CalcView() {
+
+
+                val leftNumber = rememberSaveable { mutableStateOf(0) }
+                val rightNumber = rememberSaveable { mutableStateOf(0) }
+                val operation = rememberSaveable { mutableStateOf("") }
+                val complete = rememberSaveable { mutableStateOf(false) }
+
+    if (complete.value && operation.value != "") {
+        var answer = 0
+
+        when (operation.value) {
+            "+" -> answer = leftNumber.value + rightNumber.value
+            "-" -> answer = leftNumber.value - rightNumber.value
+            "*" -> answer = leftNumber.value * rightNumber.value
+            "/" -> {
+
+                if (rightNumber.value != 0) {
+                    answer = leftNumber.value / rightNumber.value
+                    @Composable
+                    fun CalcView() {
+
+                        fun numberpress(number: Int) {
+
+                        }
+
+                        fun operationpress(operator: String) {
+
+                        }
+
+                        fun equalsfree() {
+
+                        }
+
+                    }
+
+
+                } else if (operation.value != "" && !complete.value) {
+                    val displayText = rightNumber.value.toString()
+                   }
+            }
+            else -> {
+                val displayText = rightNumber.value.toString()
+            }
+        }
+
+        val displayText = answer.toString()
+
+    }
+
+
     val display = remember { mutableStateOf("0") }
 
     Column(
