@@ -36,6 +36,7 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun CalcView() {
+    val display = remember { mutableStateOf("0") }
 
 
                 val leftNumber = rememberSaveable { mutableStateOf(0) }
@@ -57,15 +58,19 @@ fun CalcView() {
                     @Composable
                     fun CalcView() {
 
-                        fun numberpress(number: Int) {
+                        fun numberpress(btnNum: Int) {
 
                         }
 
-                        fun operationpress(operator: String) {
-
+                        fun operationpress(op: String) {
+                            if (!complete.value) {
+                                operation.value= op
+                            }
                         }
 
                         fun equalsfree() {
+
+                            complete.value = true
 
                         }
 
@@ -86,7 +91,6 @@ fun CalcView() {
     }
 
 
-    val display = remember { mutableStateOf("0") }
 
     Column(
         modifier = Modifier.background(Color.LightGray))
