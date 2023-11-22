@@ -28,9 +28,14 @@ Android Studio: [Download and install Android Studio](https://developer.android.
    ```bash
    git clone (https://github.com/venuspatel7/multicalculator)
 
+2. Add the screenshot:
 
-![Calculator App Screenshot](C:\Users\VENUS PATEL\OneDrive\Pictures\Screenshots\Screenshot 2023-11-22 130802.png)
-""
+
+![multicalculator App](C:\Users\VENUS PATEL\OneDrive\Pictures\Screenshots\Screenshot 2023-11-22 130802.png)
+![multicalculator App](C:\Users\VENUS PATEL\OneDrive\Pictures\Screenshots\Screenshot 2023-11-22 130814.png)
+![multicalculator App](C:\Users\VENUS PATEL\OneDrive\Pictures\Screenshots\Screenshot 2023-11-22 130827.png)
+![multicalculator App](C:\Users\VENUS PATEL\OneDrive\Pictures\Screenshots\Screenshot 2023-11-22 130834.png)
+![multicalculator App](C:\Users\VENUS PATEL\OneDrive\Pictures\Screenshots\Screenshot 2023-11-22 130744.png)
 
 
 
